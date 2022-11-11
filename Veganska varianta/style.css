@@ -38,3 +38,21 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+h2 {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.hlavni-recept h2 {
+    font-size: 28px;
+}
+
+.recept-meta {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hlavni-recept {
+    background-color: aquamarine;
+}
