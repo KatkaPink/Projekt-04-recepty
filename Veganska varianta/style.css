@@ -38,21 +38,73 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+
 h2 {
     font-family: Raleway, sans-serif;
     font-weight: 800;
     font-size: 18px;
+    padding: 0 10px;
 }
 
 .hlavni-recept h2 {
     font-size: 28px;
 }
 
+.hlavni-recept {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .recept-meta {
     font-size: 14px;
     font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.doporucujeme{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    padding: 0;
 }
 
 .hlavni-recept {
-    background-color: aquamarine;
+    background-image: url(images/salat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 2;
+    min-height: 200px;
+    border: 1px solid white;
 }
+
+.recepty {
+    flex-grow: 1;
+    min-height: 90px;
+}
+
+.recept {
+    border: 1px solid white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recept2 {
+    background-image: url(images/chlebicek.jpg);
+}
+
+.recept3{
+    background-image: url(images/tacos.jpg);
+}
+
+.recept4 {
+    background-image: url(images/cizrna.jpg);
+}
+
+.recept5 {
+    background-image: url(images/burger.jpg);
+}
+
