@@ -79,7 +79,7 @@ h2 {
     background-position: center;
     flex-grow: 2;
     min-height: 200px;
-    border: 0.1px solid white;
+    border: 1px solid white;
 }
 
 .recepty {
