@@ -76,35 +76,47 @@ h2 {
     background-image: url(images/salat.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     flex-grow: 2;
     min-height: 200px;
-    border: 1px solid white;
+    border: 0.1px solid white;
 }
 
 .recepty {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     min-height: 90px;
 }
 
 .recept {
     border: 1px solid white;
+    min-height: 100px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
+/* chlebicek */
 .recept2 {
     background-image: url(images/chlebicek.jpg);
+    order: 1;
 }
-
+/* avokadove tacos */
 .recept3{
     background-image: url(images/tacos.jpg);
+    order: 2;
 }
-
+/* pita chleb */
 .recept4 {
     background-image: url(images/cizrna.jpg);
+    order: 1;
 }
-
+/* burger */
 .recept5 {
     background-image: url(images/burger.jpg);
+    order: 2;
 }
 
