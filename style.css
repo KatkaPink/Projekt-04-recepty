@@ -44,6 +44,7 @@ h2 {
     font-weight: 800;
     font-size: 18px;
     padding: 0 10px;
+    text-shadow: 3px 3px 5px black;
 }
 
 .hlavni-recept h2 {
@@ -62,7 +63,8 @@ h2 {
     color: white;
     display: flex;
     flex-direction: column;
-    max-width: 480px;
+    max-width: fit-content; 
+    max-height: fit-content;
     padding: 0;
 }
 
@@ -133,10 +135,11 @@ h2 {
 
     .hlavni-recept {
         min-height: 250px;
+        flex-grow: 2;
     }
 
     .doporucujeme{
-        max-width: 860px;  
+        max-width: fit-content;  
     }
 
     .recepty {
@@ -155,5 +158,33 @@ h2 {
         padding: 20px;
     }
 
+    .recept3 {
+        order: 1;
+    }
+
 }
 
+/* pro PC */
+@media screen and (min-width: 860px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    .hlavni-recept h2 {
+        font-size: 48px;
+    }  
+
+    .hlavni-recept {
+        min-height: 400px;
+    }
+
+    .doporucujeme {
+        flex-direction: row;
+        max-width: fit-content;
+        max-height: fit-content
+    }
+
+    .recept {
+        min-height: 200px;
+    }
+}
