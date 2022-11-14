@@ -50,12 +50,6 @@ h2 {
     font-size: 28px;
 }
 
-.hlavni-recept {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .recept-meta {
     font-size: 14px;
     font-weight: 400;
@@ -64,15 +58,18 @@ h2 {
     padding: 10px;
 }
 
-.doporucujeme{
+.doporucujeme {
     color: white;
     display: flex;
     flex-direction: column;
-    max-width: 540px;
+    max-width: 480px;
     padding: 0;
 }
 
 .hlavni-recept {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url(images/salat.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,24 +96,64 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
 }
+
 /* chlebicek */
 .recept2 {
     background-image: url(images/chlebicek.jpg);
     order: 1;
 }
+
 /* avokadove tacos */
 .recept3{
     background-image: url(images/tacos.jpg);
     order: 2;
 }
+
 /* pita chleb */
 .recept4 {
     background-image: url(images/cizrna.jpg);
     order: 1;
 }
+
 /* burger */
 .recept5 {
     background-image: url(images/burger.jpg);
     order: 2;
+}
+
+/* pro TABLET */
+@media screen and (min-width: 480px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .hlavni-recept h2 {
+        font-size: 36px;
+    }
+
+    .hlavni-recept {
+        min-height: 250px;
+    }
+
+    .doporucujeme{
+        max-width: 860px;  
+    }
+
+    .recepty {
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+        
+    .recept {
+        width: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        min-height: 150px;
+    }    
+
+    .recept-meta {
+        padding: 20px;
+    }
+
 }
 
