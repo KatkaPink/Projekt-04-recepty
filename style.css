@@ -63,7 +63,7 @@ h2 {
     color: white;
     display: flex;
     flex-direction: column;
-    max-width: fit-content; 
+    max-width: 480px; 
     max-height: fit-content;
     padding: 0;
 }
@@ -135,7 +135,6 @@ h2 {
 
     .hlavni-recept {
         min-height: 250px;
-        flex-grow: 2;
     }
 
     .doporucujeme{
@@ -148,9 +147,7 @@ h2 {
     }
         
     .recept {
-        width: 50%;
-        flex-grow: 1;
-        flex-shrink: 1;
+        flex: 1 1 50%;
         min-height: 150px;
     }    
 
